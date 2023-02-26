@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class robert {
+
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Masukkan banyaknya baris : ");
+        int a = scan.nextInt();
+        System.out.println("Masukkan banyak kolom : ");
+        int b = scan.nextInt();
+        int [][] nomor = new int[a][b];
+
+        for (int i = 0; i < a; i++) {
+            for (int j = 0; j < b; j++) {
+                System.out.println("masukkan data ke-" + (i + 1) + "|" + (j + 1));
+                nomor[i][j] = scan.nextInt();
+            }
+        }
+    }
+}
