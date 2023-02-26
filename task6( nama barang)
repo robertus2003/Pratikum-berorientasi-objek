@@ -1,0 +1,31 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class robert {
+    public static void main(String[] args){
+
+        Scanner scan = new Scanner(System.in);
+
+        ArrayList<String> jumlahbarang = new ArrayList<String>();
+        ArrayList<Integer> jumlahstok = new ArrayList<Integer>();
+
+        System.out.println("Masukkan jumlah jenis barang : ");
+        int jenisbarang = scan.nextInt();
+
+        for (int i = 0; i <= jenisbarang; i++){
+
+            System.out.println("Masukkan Nama barang ke-"+i+" : ");
+            jumlahbarang.add(scan.nextLine());
+        }
+
+        for (int i = 0; i <= jenisbarang; i++){
+
+            System.out.println("Masukkan Banyak barang ke-"+i+" : ");
+            jumlahstok.add(scan.nextInt());
+        }
+
+
+
+
+    }
+}
