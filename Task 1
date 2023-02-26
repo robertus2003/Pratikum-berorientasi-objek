@@ -1,0 +1,37 @@
+// Task 1
+import java.util.Scanner;
+
+public class robert {
+    public static void main (String[] args){
+
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Masukkan Nilai yang akan difaktorialkan : ");
+        int angka = scan.nextInt();
+
+        //=================================== while ===========================================
+
+        int hasil = 1;
+        int a = 1;
+        while (a <= angka){
+            hasil = hasil * a;
+            a+= 1;
+        }
+
+        System.out.println("Hasil Faktorialnya adalah : " + hasil);
+
+        //=================================== do ===========================================
+
+        int hsl = 1;
+        int b = 1;
+
+        do{
+            hsl = hsl * b;
+            b += 1;
+
+        } while (b <= angka);
+
+        System.out.println("Hasil Faktorialnya : " + hsl);
+
+    }
+}
